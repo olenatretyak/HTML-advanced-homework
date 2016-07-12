@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<form action="localhost:8080/do" method="post">
+	<fieldset class="login-form">
+		<legend>Login</legend>
+			<div class="form-row">
+				<label for="email">Email</label><br/>
+				<input type="email" id="email" name="email" required autofocus minlength="3" placeholder="Enter your email...">
+			</div>
+
+			<div class="form-row">
+				<label for="password">Password</label><br/>
+				<input type="password" id="password" name="password" required placeholder="Enter your password...">
+			</div>
+			<div class="form-row">
+				<label for="remember-me">Remember me</label>
+				<input type="checkbox" id="remember-me" name="checkbox">	
+			</div>
+			<div class="form-row">
+				<input type="submit" name="Login" value="Submit">
+		</div>
+	</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.login-form {
+	width: 500px;
+    height: 200px;
+}
+
+.register-form {
+	width: 500px;
+}
+
+.form-row {
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+}

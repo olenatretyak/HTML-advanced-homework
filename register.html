@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<form action="localhost:8080/do" method="post">
+		<fieldset class="register-form">
+			<legend>Register form</legend>
+				<div class="form-row">
+					<label for="email">Email</label><br/>
+					<input type="email" id="email" name="email" required autofocus minlength="3" placeholder="Enter your name...">
+				</div>
+
+				<div class="form-row">
+					<label for="password">Password</label><br/>
+					<input type="password" id="password" name="password" required minlength="3" placeholder="Enter your password...">
+				</div>
+				<div class="form-row">
+					<label for="confirm-password">Confirm <br/> password</label><br/>
+					<input type="password" id="confirm-password" name="confirm-password" required minlength="3" placeholder="Confirm your password...">
+				</div>
+				<div class="form-row">
+					<label for="adress">Adress</label><br/>
+					<input type="text" id="adress" name="adress" required placeholder="Enter your adress...">
+				</div>
+				<div class="form-row">
+					<label for="date">Date of register</label><br/>
+					<input type="date" id="date" name="date" required> 
+				</div>
+				<div class="form-row">
+					<span>Select Gender</span>
+					<select>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="age">Age</label><br/>
+					<input type="number" id="age" name="age" required> 
+				</div>
+				<div class="form-row">
+					<span>Upload your photo</span><br/>
+					<input type="file" multiple required>
+				</div>
+				<div class="form-row">
+					<label>Send promotional emails?</label>
+					<p>
+			        <label for="yes">Yes<input type="radio" value="yes" name="promo" id="yes" checked></label>
+			        <label for="no">No<input type="radio" value="no" name="promo" id="no"></label></p>
+			    </div>
+			    <div class="form-row">
+			    	<label>Some interesting info about you</label>
+			    	<p><textarea name="info" required minlength="50" maxlength="300" placeholder="Some interesting info..."></textarea></p>
+			    </div>
+			    <div class="form-row">
+					<input type="reset" value="Clear">
+					<input type="submit" value="Send">
+				</div>
+	</fieldset>
+	</form>
+
+</body>
+</html>
